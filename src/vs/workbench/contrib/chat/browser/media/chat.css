@@ -1930,22 +1930,23 @@ have to be updated for changes to the rules above, or to support more deeply nes
 		overflow: hidden;
 		display: none;
 		z-index: 100;
-		background-color: var(--vscode-toolbar-hoverBackground);
+		background-color: var(--vscode-interactive-result-editor-background-color, var(--vscode-editor-background));
+		border: 1px solid var(--vscode-chat-requestBorder);
 		top: 0px;
 		right: 10px;
 		border-radius: 6px;
 	}
 
 	.request-hover .actions-container {
-		width: 18px;
-		height: 17px;
+		width: 24px;
+		height: 24px;
 	}
 
 	.request-hover .actions-container .action-label.codicon-x {
-		width: 14px;
-		height: 14px;
+		width: 24px;
+		height: 24px;
 		padding-top: 4px;
-		padding-left: 1px;
+		padding-left: 4px;
 	}
 
 	.request-hover.has-no-actions {
